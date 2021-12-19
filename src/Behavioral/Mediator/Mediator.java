@@ -3,7 +3,7 @@ package Behavioral.Mediator;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ChatImpl implements Chat {
+public class Mediator implements Chat {
     User admin;
     List<User> users = new ArrayList<>();
 

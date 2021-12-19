@@ -2,7 +2,7 @@ package Behavioral.Mediator;
 
 public class Program {
     public static void main(String[] args) {
-        ChatImpl chat = new ChatImpl();
+        Mediator chat = new Mediator();
 
         User admin = new Admin(chat, "Admin");
         User user1 = new UserImpl(chat, "User 1");
@@ -14,6 +14,5 @@ public class Program {
 
         user1.sendMessage("Hello, I'm user One");
         admin.sendMessage("Hi. I'm admin");
-
     }
 }
